@@ -77,7 +77,9 @@ c                 1 => uniform and truncated at 1/e
 c first time through, calculate xc, yc, zc
 c the file nevoidN.NE2001.dat has to lie at this location
 c otherwise I get strange errors...
-	filename = '/nfs/astrop/d6/meyerm/nevoidN.NE2001.dat'
+	filename = '
+     ./Users/manuelmeyer/projects/NE2001/input.NE2001/nevoidN.NE2001.dat
+     .'
 
 	if(first) then 		!read void parameters
 	  j=1

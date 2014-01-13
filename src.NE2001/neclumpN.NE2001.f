@@ -74,8 +74,9 @@ c    rc = clump radius (kpc)
 c  edge = 0,1  0=> Gaussian, 1=> Gaussian w/ hard edge at e^{-1} 
 c  type = LOS type (P pulsar, G other Galactic, X extragalactic
 c losname = useful name
-	filename = '/afs/desy.de/user/m/meyerm/projects/
-     .NE2001/input.NE2001/neclumpN.NE2001.dat'
+	filename = '
+     ./Users/manuelmeyer/projects/NE2001/input.NE2001/neclumpN.NE2001.da
+     .t'
 
 	if(first) then 		!read clump parameters
 	  j=1

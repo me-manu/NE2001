@@ -146,11 +146,10 @@ c	farm:	factors that multiply n_e^2 when calculating SM
 
 	real negc0, Fgc0
         common /gcparms/ negc0, Fgc0
-	character*56 path
+	character*48 path
 	character*120 galinp
 
-	path = '/afs/desy.de/user/m/meyerm/projects/
-     .NE2001/input.NE2001/'
+	path = '/Users/manuelmeyer/projects/NE2001/input.NE2001/'
 
 	galinp = path // 'gal01.inp'
 
@@ -261,7 +260,8 @@ c see get_parameters for definitions of narm, warm, harm.
 	real th3a, th3b, fac3min, test3
 	real th2a, th2b, fac2min, test2
 
-	character*56 path
+	character*48 path
+
 	character*120 armsinp
 	character*120 logarms
 
@@ -273,8 +273,7 @@ c function:
 	rr=sqrt(x**2 + y**2)
 	if(first) then			! Reconstruct spiral arm axes
 
-	path = '/afs/desy.de/user/m/meyerm/projects/
-     .NE2001/input.NE2001/'
+	path = '/Users/manuelmeyer/projects/NE2001/input.NE2001/'
 
 	armsinp= path // 'ne_arms_log_mod.inp'
 	logarms= path // 'log_arms.out'
@@ -628,7 +627,8 @@ c     parameter (hgc=0.026)
       logical first
       data first /.true./
 
-	character*56 path
+	character*48 path
+
 	character*120 gcinp
 
       save
@@ -636,8 +636,7 @@ c     parameter (hgc=0.026)
       ne_gc = 0.
       F_gc = 0.
 
-	path = '/afs/desy.de/user/m/meyerm/projects/
-     .NE2001/input.NE2001/'
+	path = '/Users/manuelmeyer/projects/NE2001/input.NE2001/'
 
 	gcinp  = path // 'ne_gc.inp'
       if(first) then

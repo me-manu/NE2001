@@ -52,11 +52,10 @@ c other variables:
 	real FLDRQ1r, FLSBr, FLHBr, FLOOPIr		! 'r' for returned value
 	integer wLDR, wLSB, wLHB, wLOOPI
 
-	character*56 path
+	character*48 path
 	character*120 nelisminp
 
-	path = '/afs/desy.de/user/m/meyerm/projects/
-     .NE2001/input.NE2001/'
+	path = '/Users/manuelmeyer/projects/NE2001/input.NE2001/'
 
 	nelisminp= path // 'nelism.inp'
 
